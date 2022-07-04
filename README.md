@@ -13,4 +13,4 @@
 - A simplified class diagram representing your project structure should be added to the repo.
 
 ### Class Diagram
-[ClassDiagram](C:\Users\maria.de.la.rosa\OneDrive - Accenture\Desktop\Classdiagram.png.png)
+![Classdiagram png](https://user-images.githubusercontent.com/100228799/177216834-b2b76d0c-9c6d-4ebc-ae1f-4fa4936618db.png)
