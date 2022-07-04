@@ -13,4 +13,4 @@
 - A simplified class diagram representing your project structure should be added to the repo.
 
 ### Class Diagram
-![Classdiagram png](https://user-images.githubusercontent.com/100228799/177216834-b2b76d0c-9c6d-4ebc-ae1f-4fa4936618db.png)
+![Classdiagram drawio](https://user-images.githubusercontent.com/100228799/177216929-30ef1f57-832b-4c27-8ab4-2fb5119a68a8.png)
