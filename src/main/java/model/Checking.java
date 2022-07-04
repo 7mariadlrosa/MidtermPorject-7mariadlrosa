@@ -50,15 +50,6 @@ public class Checking extends Account{
         setLasMonthlyMaintenance(LocalDate.now());
     }
 
-    public Checking(AccountHolder primaryOwner, Money balance, String secretKey) {
-        super(primaryOwner, balance);
-        setSecretKey(secretKey);
-        setDefaultMonthlyMaintenanceFee();
-        setDefaultMinimumBalance();
-        setBelowMinimumBalance(false);
-        setLasMonthlyMaintenance(LocalDate.now());
-    }
-
     public String getSecretKey() {
         return secretKey;
     }
