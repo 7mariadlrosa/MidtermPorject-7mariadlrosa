@@ -11,3 +11,6 @@
 ## Deliverables
 - A working REST API, built by you that runs on a local server.
 - A simplified class diagram representing your project structure should be added to the repo.
+
+### Class Diagram
+<img src="/desktop/Classdiagram.png" alt="ClassDiagram"/>
