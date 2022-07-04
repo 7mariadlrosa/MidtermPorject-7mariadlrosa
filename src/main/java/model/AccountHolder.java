@@ -8,33 +8,25 @@ import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
-@PrimaryKeyJoinColumn(name ="id")
+@PrimaryKeyJoinColumn(name ="id_account_holder")
 public class AccountHolder extends User {
 
     private LocalDate dateOfBirth;
 
     @Embedded
     @AttributeOverrides(value = {
-            @AttributeOverride(name = "address", column = @Column(name = "primaryAddress")),
+            @AttributeOverride(name = "address", column = @Column(name = "primary_address")),
     })
     private Address primaryAddress;
 
+    @Column(name = "mailing_address")
     private String mailingAddress;
-
-    public AccountHolder(String pepe_botijo, String elbotijero, Role accountHolder, LocalDate of, classes.Address address1, classes.Address address2) {
-    }
 
     public AccountHolder(String name, String username, String password, LocalDate dateOfBirth, classes.Address address) {
     }
 
     public AccountHolder(String name, String password, Set<Roles> roles, LocalDate dateOfBirth, Address primaryAddress,String mailingAddress) {
         super(name, password, roles);
-        this.dateOfBirth = dateOfBirth;
-        this.primaryAddress = primaryAddress;
-        this.mailingAddress = mailingAddress;
-    }
-
-    public AccountHolder(LocalDate dateOfBirth, Address primaryAddress, String mailingAddress) {
         this.dateOfBirth = dateOfBirth;
         this.primaryAddress = primaryAddress;
         this.mailingAddress = mailingAddress;
