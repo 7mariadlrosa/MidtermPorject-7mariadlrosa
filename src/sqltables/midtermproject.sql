@@ -76,3 +76,11 @@ interest_add_date DATE,
 PRIMARY KEY (id_credit_card),
 FOREIGN KEY (id_credit_card) REFERENCES account_table (id_account)
 );
+
+INSERT INTO users_table (username_user, password_user) 
+VALUES ("ADMIN", "$1a$30$gj6c/McjSiFmdSdeotKzawxuJrc/8tg/5zWBsWHBXV3wraZKf/r0hR4");
+
+INSERT INTO role_table (name_user, id) 
+VALUES ("ADMIN", "1");
+
+INSERT INTO admin_table (name_admin, id_admin) VALUES ("ADMIN", 1);
