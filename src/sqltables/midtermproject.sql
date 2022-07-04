@@ -12,15 +12,14 @@ id INT NOT NULL AUTO_INCREMENT,
 CREATE TABLE role_table (
     id_role BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     name VARCHAR(255),
-    user_id BIGINT,
-    FOREIGN KEY (user_id) REFERENCES user_table (id)
+    FOREIGN KEY (id_role) REFERENCES users_table (id)
 );
 
 CREATE TABLE admin_table (
 id_admin INT,
 name_admin VARCHAR (255),
 PRIMARY KEY (id),
-FOREIGN KEY (id_admin) REFERENCES user_table (id)
+FOREIGN KEY (id_admin) REFERENCES users_table (id)
 );
 
 CREATE TABLE account_holder_table (
@@ -41,7 +40,7 @@ balance_account DECIMAL,
 penaltyFee_account DECIMAL,
 monthlyMaintenanceFee_account DECIMAL,
 status ENUM ("FROZEN", "ACTIVE"),
-PRIMARY KEY (id_account)
+PRIMARY KEY (id_account),
 FOREIGN KEY (pOwner_account) REFERENCES account_holder_table (id_account),
 FOREIGN KEY (sOwner_account) REFERENCES account_holder_table (id_account)
 );
