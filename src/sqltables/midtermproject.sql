@@ -6,7 +6,7 @@ id INT NOT NULL AUTO_INCREMENT,
     name_user VARCHAR(255),
     username_user VARCHAR(255),
     password_user VARCHAR(255),
-    PRIMARY KEY (id),
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE role_table (
