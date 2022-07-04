@@ -6,7 +6,7 @@ import enums.Role;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "role_table")
 public class Roles {
 
     @Id
