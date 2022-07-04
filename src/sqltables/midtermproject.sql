@@ -26,6 +26,7 @@ CREATE TABLE account_holder_table (
 id_account_holder INT,
 name_account_holder VARCHAR (255),
 date_of_birth DATE,
+    primary_address ADDRESS,
 mailing_address VARCHAR (255),
 PRIMARY KEY (id),
 FOREIGN KEY (id) REFERENCES users_table (id)
